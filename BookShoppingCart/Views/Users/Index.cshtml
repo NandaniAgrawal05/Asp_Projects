@@ -1,0 +1,32 @@
+﻿@model IEnumerable<BookShoppingCart.Models.User>
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <form asp-action="Index" asp-controller="Users" method="post">
+                <label asap-for="UserName">Username</label>
+                <input asap-for="UserName" placeholder="Enter your UserName" class="form-control"/>
+                <br/>
+                <label asap-for="Password">Password</label>
+                <input asap-for="Password" placeholder="Enter your Password" class="form-control" />
+                <br/>
+                <br />
+                <input type="submit" value="submit" formaction="@Url.Action("Index","Books")" class="btn btn-outline-primary" />
+            </form>
+        </div>
+    </div>
+</div>
+
+            </td>
+        </tr>
+
+    </tbody>
+</table>
